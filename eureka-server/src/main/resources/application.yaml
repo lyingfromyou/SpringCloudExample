@@ -1,0 +1,24 @@
+##应用名
+spring:
+  application:
+    name: eureka-server
+##端口
+server:
+  port: 9999
+
+eureka:
+  ##关闭保护, 服务关闭之后自动移除
+  client:
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+    ##表明为一个server
+    fetch-registry: false
+    register-with-eureka: false
+  instance:
+    hostname: localhost
+  server:
+    ##关闭保护机制
+    enable-self-preservation: false
+    ##清理间隔时间(毫秒)
+    eviction-interval-timer-in-ms: 3000
+
