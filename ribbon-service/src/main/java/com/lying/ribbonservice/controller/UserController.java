@@ -1,6 +1,6 @@
-package com.lying.consumerribbon.controller;
+package com.lying.ribbonservice.controller;
 
-import com.lying.consumerribbon.service.UserService;
+import com.lying.ribbonservice.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;

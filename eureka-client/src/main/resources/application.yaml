@@ -1,8 +1,13 @@
 server:
-  port: 9990
+  port: 9991
 spring:
   application:
     name: eureka-client
+  datasource:
+    url: jdbc:mysql://192.168.239.234:3306/test
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
 eureka:
   client:
     healthcheck.enabled: true

@@ -1,4 +1,4 @@
-package com.lying.consumerribbon.service;
+package com.lying.ribbonservice.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
