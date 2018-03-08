@@ -1,0 +1,11 @@
+server:
+  port: 9996
+
+spring:
+  application:
+    name: config-client
+  cloud:
+    config:
+      uri: http://localhost:9997/
+      profile: default # 默认default
+      label: master
